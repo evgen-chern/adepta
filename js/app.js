@@ -5,7 +5,7 @@ function reviewsCarouselInit() {
         loop:true,
         margin:25,
         nav:true,
-        navText: ["<img src='/img/prev.svg'>","<img src='/img/next.svg'>"],
+        navText: ["<img src='img/prev.svg'>","<img src='img/next.svg'>"],
         dots:true,
         smartSpeed: 400,
         responsive: {
@@ -25,7 +25,7 @@ function mobileCompanyCarouselInit() {
         loop:true,
         margin:10,
         nav:true,
-        navText: ["<img src='/img/prev.svg'>","<img src='/img/next.svg'>"],
+        navText: ["<img src='img/prev.svg'>","<img src='img/next.svg'>"],
         dots:true,
         autoWidth: true,
         smartSpeed: 400,
