@@ -1,0 +1,2 @@
+# adepta
+wordpress
