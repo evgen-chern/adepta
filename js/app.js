@@ -27,7 +27,7 @@ function mobileCompanyCarouselInit() {
         nav:true,
         navText: ["<img src='img/prev.svg'>","<img src='img/next.svg'>"],
         dots:true,
-        autoWidth: true,
+        autoWidth: false,
         smartSpeed: 400,
     });
 }
