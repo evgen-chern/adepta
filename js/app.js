@@ -11,6 +11,8 @@ function reviewsCarouselInit() {
         responsive: {
             0: {
                 autoWidth: false,
+                center: true,
+                margin: 0,
             },
             767: {
                 autoWidth: true,
@@ -23,7 +25,23 @@ function mobileCompanyCarouselInit() {
     owlCarouselMobileCompany.owlCarousel({
         items:1,
         loop:true,
-        margin:10,
+        margin:0,
+        center: true,
+        nav:true,
+        navText: ["<img src='img/prev.svg'>","<img src='img/next.svg'>"],
+        dots:true,
+        autoWidth: false,
+        smartSpeed: 400,
+    });
+}
+
+function mobileWorkCarouselInit() {
+    let owlCarouselMobileWork = $('.work_of_our_students .work_list');
+    owlCarouselMobileWork.owlCarousel({
+        items:1,
+        loop:true,
+        margin:0,
+        center: true,
         nav:true,
         navText: ["<img src='img/prev.svg'>","<img src='img/next.svg'>"],
         dots:true,
@@ -60,6 +78,7 @@ $(function (){
 
     if(screen.width < 767){
         mobileCompanyCarouselInit();
+        mobileWorkCarouselInit();
     }
     initYandexMap();
     reviewsCarouselInit();

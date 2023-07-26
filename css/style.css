@@ -980,7 +980,7 @@ footer .copyright p {
   width: 190px;
   height: 45px;
   background: #FDBF68;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 
 .study_areas .areas_list .item .item_description a:hover {
@@ -1065,6 +1065,11 @@ footer .copyright p {
   grid-gap: 35px;
 }
 
+.additional_information .information_list.brows {
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .additional_information .information_list .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1125,6 +1130,10 @@ footer .copyright p {
 .sign_up__for_training {
   padding: 60px 0;
   background: url("../img/sign_up.svg") center/cover no-repeat;
+}
+
+.sign_up__for_training.mb-200 {
+  margin-bottom: 180px;
 }
 
 .sign_up__for_training h2 {
@@ -1240,7 +1249,8 @@ footer .copyright p {
 }
 
 .company_photo .owl-dots,
-.reviews_list .owl-dots {
+.reviews_list .owl-dots,
+.work_list .owl-dots {
   position: absolute;
   left: 40%;
   right: 40%;
@@ -1257,7 +1267,8 @@ footer .copyright p {
 }
 
 .company_photo .owl-dots .owl-dot,
-.reviews_list .owl-dots .owl-dot {
+.reviews_list .owl-dots .owl-dot,
+.work_list .owl-dots .owl-dot {
   width: 21px;
   height: 21px;
   border-radius: 50%;
@@ -1268,12 +1279,14 @@ footer .copyright p {
 }
 
 .company_photo .owl-dots .owl-dot.active,
-.reviews_list .owl-dots .owl-dot.active {
+.reviews_list .owl-dots .owl-dot.active,
+.work_list .owl-dots .owl-dot.active {
   background: #E65D6F;
 }
 
 .company_photo .owl-nav,
-.reviews_list .owl-nav {
+.reviews_list .owl-nav,
+.work_list .owl-nav {
   position: absolute;
   bottom: -45px;
   left: 25%;
@@ -1288,8 +1301,13 @@ footer .copyright p {
 }
 
 .company_photo .owl-nav .owl-prev,
-.reviews_list .owl-nav .owl-prev {
+.reviews_list .owl-nav .owl-prev,
+.work_list .owl-nav .owl-prev {
   margin-right: 10px;
+}
+
+.owl-carousel .owl-stage-outer {
+  max-height: 585px;
 }
 
 .about_company {
@@ -1404,6 +1422,220 @@ footer .copyright p {
   width: 100%;
 }
 
+.course_content {
+  padding: 100px 0 140px 0;
+}
+
+.course_content h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.course_content h3 {
+  text-align: center;
+  color: #F66;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.course_content .content_wrapper {
+  margin-top: 75px;
+  border: 3px solid #E65D6F;
+}
+
+.course_content .content_wrapper h4 {
+  margin: 70px 0 50px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.course_content .content_wrapper .course_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 50px 50px 100px;
+}
+
+.course_content .content_wrapper .course_description .left_side {
+  margin-right: 100px;
+}
+
+.course_content .content_wrapper .course_description ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.course_content .content_wrapper .course_description ul li:before {
+  display: block;
+  margin-right: 20px;
+  content: url("../img/check.png");
+  width: 30px;
+  height: 30px;
+}
+
+.course_content .content_wrapper .what_after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.course_content .content_wrapper .what_after img {
+  width: 100%;
+  max-width: 520px;
+  height: 100%;
+}
+
+.course_content .content_wrapper .what_after .right_side {
+  max-width: 649px;
+  background: #FDBF68;
+  padding: 60px 60px 50px 60px;
+}
+
+.course_content .content_wrapper .what_after .right_side ul li {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.what_else__can_we_teach_you {
+  margin-bottom: 220px;
+}
+
+.what_else__can_we_teach_you h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 65px;
+}
+
+.what_else__can_we_teach_you .skills_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.what_else__can_we_teach_you .skills_list .item {
+  position: relative;
+  width: 100%;
+}
+
+.what_else__can_we_teach_you .skills_list .item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 313px;
+}
+
+.what_else__can_we_teach_you .skills_list .item .item_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  right: 13px;
+  bottom: 13px;
+  border: 2px solid #fff;
+}
+
+.what_else__can_we_teach_you .skills_list .item .item_description span {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.what_else__can_we_teach_you .skills_list .item .item_description p {
+  margin: 10px 0 25px 0;
+  padding: 0 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.what_else__can_we_teach_you .skills_list .item .item_description h3 {
+  color: #FFF;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: auto;
+}
+
+.what_else__can_we_teach_you .skills_list .item .item_description a {
+  margin: auto 0 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+  height: 35px;
+  background: #FDBF68;
+  border-radius: 30px;
+}
+
+.what_else__can_we_teach_you .skills_list .item .item_description a:hover {
+  background: #B4872C;
+}
+
+.work_of_our_students {
+  margin-bottom: 230px;
+}
+
+.work_of_our_students h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 65px;
+}
+
+.work_of_our_students .work_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px 30px;
+}
+
+.work_of_our_students .work_list .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media all and (max-width: 1366px) {
   .popup_form .pop_content {
     margin: 10% auto;
@@ -1437,12 +1669,19 @@ footer .copyright p {
     font-size: 22px;
     line-height: 30px;
   }
-}
 
-@media all and (max-width: 1024px) {
-  .additional_information .information_list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+  .course_content .content_wrapper .what_after .right_side {
+    padding: 30px 30px 20px 30px;
+  }
+
+  .what_else__can_we_teach_you .skills_list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .what_else__can_we_teach_you .skills_list .item .item_description h3 {
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 
@@ -1476,6 +1715,16 @@ footer .copyright p {
     grid-gap: 60px;
   }
 
+  .additional_information .information_list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .additional_information .information_list.brows {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .sign_up__for_training p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1492,10 +1741,40 @@ footer .copyright p {
   }
 
   .company_photo .owl-dots,
-  .reviews_list .owl-dots {
+  .reviews_list .owl-dots,
+  .work_list .owl-dots {
     bottom: -90px;
-    left: 25%;
-    right: 25%;
+    left: 23%;
+    right: 23%;
+  }
+
+  .course_content .content_wrapper .course_description {
+    padding: 0 15px 50px 15px;
+  }
+
+  .course_content .content_wrapper .what_after {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .course_content .content_wrapper .what_after img {
+    max-width: 100%;
+  }
+
+  .course_content .content_wrapper .what_after .right_side {
+    padding: 60px 20px 80px 20px;
+    max-width: 100%;
+  }
+
+  .what_else__can_we_teach_you .skills_list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work_of_our_students .work_list {
+    grid-gap: 20px;
   }
 }
 
@@ -1717,6 +1996,7 @@ footer .copyright p {
   .study_areas .areas_list .item .item_description a {
     width: 140px;
     height: 30px;
+    border-radius: 30px;
   }
 
   .features_of__school {
@@ -1750,6 +2030,11 @@ footer .copyright p {
   }
 
   .additional_information .information_list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .additional_information .information_list.brows {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -1797,14 +2082,19 @@ footer .copyright p {
   }
 
   .reviews .reviews_list .item {
-    max-width: 343px;
+    max-width: 100%;
   }
 
   .company_photo .owl-nav,
-  .reviews_list .owl-nav {
+  .reviews_list .owl-nav,
+  .work_list .owl-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    max-height: 625px;
   }
 
   .about_company {
@@ -1829,7 +2119,7 @@ footer .copyright p {
   }
 
   .about_company .company_photo .photo {
-    max-width: 323px;
+    max-width: 100%;
   }
 
   .about_company .company_photo .photo img {
@@ -1865,6 +2155,81 @@ footer .copyright p {
   .contacts .address .feedback {
     width: 220px;
     height: 45px;
+  }
+
+  .course_content h2 {
+    font-size: 28px;
+  }
+
+  .course_content h3 {
+    font-size: 28px;
+  }
+
+  .course_content .content_wrapper {
+    margin-top: 40px;
+  }
+
+  .course_content .content_wrapper h4 {
+    margin: 60px 0 40px 0;
+    font-size: 24px;
+  }
+
+  .course_content .content_wrapper .course_description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .course_content .content_wrapper .course_description .left_side {
+    margin-right: 0;
+  }
+
+  .course_content .content_wrapper .course_description ul li {
+    font-size: 14px;
+  }
+
+  .course_content .content_wrapper .course_description ul li:before {
+    margin-right: 15px;
+  }
+
+  .course_content .content_wrapper .what_after .right_side ul li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .what_else__can_we_teach_you {
+    margin-bottom: 200px;
+  }
+
+  .what_else__can_we_teach_you h2 {
+    font-size: 28px;
+  }
+
+  .what_else__can_we_teach_you .skills_list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .work_of_our_students h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+
+  .work_of_our_students .work_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: unset;
+  }
+
+  .work_of_our_students .work_list .item {
+    max-width: 100%;
+  }
+
+  .work_of_our_students .work_list .item img {
+    width: 100%;
+    height: auto;
   }
 }
 
