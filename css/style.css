@@ -795,11 +795,24 @@ footer .copyright p {
   position: relative;
 }
 
+.top_banner .banner_wrapper.eyelashes h1 {
+  margin-bottom: 15px;
+  max-width: 710px;
+}
+
+.top_banner .banner_wrapper.eyelashes h2 {
+  font-size: 32px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  max-width: 710px;
+}
+
 .top_banner .banner_wrapper h1 {
   font-size: 55px;
   font-weight: 700;
   line-height: 65px;
-  max-width: 747px;
+  max-width: 655px;
   margin-bottom: 40px;
 }
 
@@ -807,7 +820,7 @@ footer .copyright p {
   padding: 0 0 65px 32px;
   border-left: 2px solid #FFCC66;
   border-bottom: 2px solid #FFCC66;
-  max-width: 294px;
+  max-width: 306px;
 }
 
 .top_banner .banner_wrapper .text_info p {
@@ -1434,12 +1447,24 @@ footer .copyright p {
   margin-bottom: 30px;
 }
 
+.course_content h2 span {
+  display: block;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
 .course_content h3 {
   text-align: center;
   color: #F66;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+}
+
+.course_content h3.eyelashes {
+  color: #000;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 .course_content .content_wrapper {
@@ -1508,6 +1533,20 @@ footer .copyright p {
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 20px;
+}
+
+.course_content .company_description {
+  margin-top: 60px;
+}
+
+.course_content .company_description p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.course_content .company_description b {
+  font-weight: 700;
 }
 
 .what_else__can_we_teach_you {
@@ -1696,6 +1735,12 @@ footer .copyright p {
 
   footer .footer_links .footer_logo {
     margin: 0 15px 0 0;
+  }
+
+  .top_banner .banner_wrapper.eyelashes h2 {
+    max-width: 467px;
+    font-size: 24px;
+    line-height: 34px;
   }
 
   .top_banner .banner_wrapper .buttons {
@@ -1953,6 +1998,11 @@ footer .copyright p {
     padding: 165px 0 145px 0;
   }
 
+  .top_banner .banner_wrapper.eyelashes h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .top_banner .banner_wrapper h1 {
     font-size: 29px;
     line-height: 40px;
@@ -2165,6 +2215,10 @@ footer .copyright p {
     font-size: 28px;
   }
 
+  .course_content h3.eyelashes {
+    font-size: 20px;
+  }
+
   .course_content .content_wrapper {
     margin-top: 40px;
   }
@@ -2172,6 +2226,7 @@ footer .copyright p {
   .course_content .content_wrapper h4 {
     margin: 60px 0 40px 0;
     font-size: 24px;
+    padding: 0 15px;
   }
 
   .course_content .content_wrapper .course_description {
@@ -2194,6 +2249,16 @@ footer .copyright p {
   }
 
   .course_content .content_wrapper .what_after .right_side ul li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .course_content .company_description {
+    margin-top: 40px;
+  }
+
+  .course_content .company_description p {
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 24px;
   }
