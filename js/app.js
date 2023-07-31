@@ -75,6 +75,18 @@ $(function (){
     let hasSub = '.has_sub';
     let dropdownMenu = '.dropdown-menu';
     let headerMenuFix = '.header_menu.fix';
+    let tabLink = '.open_tab';
+    let openSkills = '.open_skills';
+
+    $(openSkills).on('click', function (){
+        $('.skills_list.hidden').toggleClass('active');
+    });
+
+    $(tabLink).on('click', function() {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('.tabs_content').find('.tab').removeClass('active').eq($(this).index()).addClass('active');
+    });
 
     if(screen.width < 767){
         mobileCompanyCarouselInit();
